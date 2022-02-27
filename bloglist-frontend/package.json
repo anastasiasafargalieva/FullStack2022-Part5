@@ -5,6 +5,7 @@
   "dependencies": {
     "@testing-library/user-event": "^12.6.3",
     "axios": "^0.21.1",
+    "cypress": "^9.5.0",
     "eject": "^0.0.4",
     "eslint": "^8.10.0",
     "prop-types": "^15.8.1",

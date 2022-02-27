@@ -6,6 +6,7 @@ import Notification from './components/Notification'
 import Togglable from './components/Togglable'
 import BlogForm from './components/BlogForm'
 
+
 const App = () => {
   const [blogs, setBlogs] = useState([])
   const [user, setUser] = useState(null)
@@ -49,18 +50,18 @@ const App = () => {
   }
 
   const loginForm = () => (
-    <form onSubmit={handleLogin}>
+    <form className='loginForm' onSubmit={handleLogin}>
       <div>username
-        <input type="text" value={username} name="Username"
+        <input id='username' type="text" value={username} name="Username"
           onChange={({ target }) => setUsername(target.value)}
         />
       </div>
       <div>password
-        <input type="password" value={password} name="Password"
+        <input id='password' type="password" value={password} name="Password"
           onChange={({ target }) => setPassword(target.value)}
         />
       </div>
-      <button type="submit">login</button>
+      <button id='login-button' type="submit">login</button>
     </form>
   )
 
